@@ -1,0 +1,11 @@
+@import "./variables";
+@import "~bootstrap/scss/bootstrap";
+@import "./vendor/navbar";
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background: $background-color;
+  color: $dark;
+}
