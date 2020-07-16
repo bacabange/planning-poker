@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -8,14 +8,18 @@ const Container = styled.div`
   flex-shrink: 0;
   border-top-right-radius: .8rem;
 
+  ${({ withShadow }) => withShadow && `
+    box-shadow:  0px 15px 15px -20px rgba(44,52,78,0.3);
+  `}
+
   & h6 {
     margin: 0;
   }
 `;
 
-const PanelHeader = ({ children }) => {
+const PanelHeader = ({ children, withShadow }) => {
   return (
-    <Container>
+    <Container withShadow>
       {children}
     </Container>
   )

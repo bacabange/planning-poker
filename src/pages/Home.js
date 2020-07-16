@@ -3,6 +3,7 @@ import { Row, Col, Button } from 'reactstrap';
 import HeroImage from '../assets/images/Hero-image.png';
 import styled from 'styled-components';
 import IconList from '../components/IconList';
+import { Link } from "react-router-dom";
 
 const Title = styled.h1`
   margin-top: 1rem;
@@ -18,7 +19,7 @@ const Home = () => {
 
           <IconList />
 
-          <Button color="secondary">Create Session</Button>
+          <Button color="secondary" tag={Link} to="/create-session">Create Session</Button>
         </Col>
         <Col className="d-none d-lg-block d-md-block">
           <img src={HeroImage} className="img-fluid" alt="Responsive" />

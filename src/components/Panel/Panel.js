@@ -7,7 +7,8 @@ const Container = styled.div`
   border-radius: .8rem;
   border: 1px solid ${props => props.theme.colors.borderCardColor};
   box-shadow: 0px 2px 80px -40px rgba(44, 52, 78, 0.2);
-  min-height: 480px;
+  /* min-height: 480px; */
+  width: 100%;
   display: flex;
   flex-direction: column;
 `;

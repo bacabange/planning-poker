@@ -1,6 +1,7 @@
 import React from 'react';
 import Panel from '../components/Panel';
 import { Row, Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Link } from "react-router-dom";
 
 const CreateSession = () => {
   return (
@@ -52,7 +53,7 @@ const CreateSession = () => {
 
         <Panel.Footer>
           <div className="d-flex justify-content-end">
-            <Button color="secondary">Create Session</Button>
+            <Button color="secondary" tag={Link} to="/board">Create Session</Button>
           </div>
         </Panel.Footer>
       </Panel>
