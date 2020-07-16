@@ -12,7 +12,7 @@ import {
 
 import { Link } from "react-router-dom";
 
-const NavBar = () => {
+const NavBar = ({ onEnter }) => {
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -26,7 +26,7 @@ const NavBar = () => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">Enter</NavLink>
+              <NavLink onClick={() => onEnter()}>Enter</NavLink>
             </NavItem>
             <NavItem>
               <Button color="primary" tag={Link} to="/create-session">Create Session</Button>

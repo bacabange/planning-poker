@@ -1,0 +1,17 @@
+.modal-header {
+  background: white;
+  box-shadow: 0px 2px 40px -20px rgba(44, 52, 78, 0.5);
+
+  h5 {
+    font-weight: 600;
+  }
+}
+
+.modal-body {
+  padding: 2rem 1rem;
+}
+
+.modal-footer {
+  padding: .5rem;
+  border-top: 1px solid $separator-color;
+}
