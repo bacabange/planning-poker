@@ -16,7 +16,8 @@ function App() {
         secondary: `#F75653`,
         backgroundColor: `#F6FBFF`,
         dark: `#2C344E`,
-        gray1: `#9BAEC8`
+        gray1: `#9BAEC8`,
+        borderCardColor: '#EAEEF9'
       }
     }}>
       <Router>
